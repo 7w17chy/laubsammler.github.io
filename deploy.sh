@@ -5,5 +5,5 @@ cp -rp book/* /tmp/book/
 cd /tmp/book
 git add -A
 git commit -m 'deploy new version of the book'
-git push origin gh-pages
+git push github gh-pages
 cd -
