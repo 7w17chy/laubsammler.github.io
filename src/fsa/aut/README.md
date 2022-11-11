@@ -1,3 +1,0 @@
-# Automaten
-
-TODO
