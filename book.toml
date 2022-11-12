@@ -1,9 +1,10 @@
 [book]
 authors = ["Max Nerius"]
-language = "en"
+language = "de"
 multilingual = false
 src = "src"
 title = "Das Beste aus drei Jahren Kopfschmerzen"
 
 [output.html]
 mathjax-support = true
+curly-quotes = true

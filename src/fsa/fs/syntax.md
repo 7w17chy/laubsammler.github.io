@@ -1,8 +1,8 @@
 # Syntax
 
-Die Syntax (also Rechtschreibung) wird durch einen "regulären Ausdruck" beschrieben. Die
-Symbole eines regulären Ausdrucks beziehen sich immer auf das zuvorstehende Element (also 
-z. B. Zeichen aus dem Eingabealphabet) des Tupels \\( G \\):
+Die Syntax (also Rechtschreibung) einer formalen Sprache wird durch "reguläre Ausdrucke" beschrieben.
+Sie gibt die Regeln an, nach der die Wörter der Sprache gebildet werden[^infschule].
+Die Symbole eines regulären Ausdrucks beziehen sich immer auf das zuvorstehende Zeichen.
 
 | Symbol | Bedeutung/Semantik |
 | :-: | :-: |
@@ -14,3 +14,4 @@ z. B. Zeichen aus dem Eingabealphabet) des Tupels \\( G \\):
 
 Diese sind häufig in den Produktionen \\( P_{i} \\) von \\( G \\) zu finden.
 
+[^infschule]: [Artikel von inf-schule.de zum Thema Syntax, Semantik und Pragmatik](https://www.inf-schule.de/automaten-sprachen/sprachenundautomaten/formalesprachen/einfuehrung_zeichensystem/syntaxsemantikpragmatik)

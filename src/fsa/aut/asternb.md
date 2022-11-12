@@ -36,11 +36,11 @@ Mittels eines deterministischen endlichen Automaten, der
 nach \\( G \\) modelliert ist, können wir nun die Eingabeworte auf Zugehörigkeit zur Sprache \\( L \\)
 prüfen:
 
-TODO: Automatengrafik einfuegen!
+![Automat für die Sprache \\( a*b \\)](asternb.grafik.png)
 
 In Worten beschrieben:
 
   1. Solange Zeichen "a" auf dem Eingabeband ist, bleibe in Zustand \\( q_{0} \\).
-  2. Wird Zeichen "b" gelesen, wechsle in Zustand \\( q_{1} \\).
-  3. Wird noch ein "b" gelesen, wechsle in Zustand \\( q_{müll} \\) (Wort nicht akzeptiert/in Sprache).
-  4. Wird ein Leerzeichen gelesen, wechsle stattdessen in Zustand \\( q_{a} \\), das Wort ist in der Sprache/ist akzeptiert.
+  2. Wird Zeichen "b" gelesen, wechsle in Zustand \\( q_{1} \\). Ist dies das letzte Eingabezeichen, so ist das Wort in der Sprache akzeptiert/enthalten.
+  3. Ist es nicht das letzte Eingabezeichen, aber der Endzustand erreicht, so ist das Wort *nicht* in der Sprache enthalten.
+  4. Ist es das letzte Eingabezeichen aber der Endzustand ist erreicht, so ist das Wort ebenfalls *nicht* in der Sprache enthalten.
