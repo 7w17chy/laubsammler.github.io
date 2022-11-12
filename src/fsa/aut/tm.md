@@ -15,7 +15,7 @@ Das theoretische Modell einer Turingmaschine besteht aus einem 7-Tupel
 | \\( E \subseteq Z \\) | endliche Endzustandsmenge |
 
 ## Die Übergangsfunktion
-Die Übergangsfunktion $\delta$ ist wie folgt definiert:
+Die Übergangsfunktion \\( \delta \\) ist wie folgt definiert:
 
 \\[
 \begin{equation}
