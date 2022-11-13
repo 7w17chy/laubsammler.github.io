@@ -16,8 +16,8 @@ Eine solche Sprache lässt sich mit folgender Grammatik beschreiben:
 \begin{array}{l}
 G = (N, T, P, S)\\\\
 \\\\
-N = \\{a, b\\}\\\\
-T = \\{\varepsilon\\}\\\\
+N = \\{A, X\\}\\\\
+T = \\{a, b, \varepsilon\\}\\\\
 P = \\{X \rightarrow aAb, A \rightarrow a\vert\varepsilon\\}\\\\
 S = X\nonumber
 \end{array}
