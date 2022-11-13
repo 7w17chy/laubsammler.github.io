@@ -4,24 +4,20 @@ Als Beispiel soll eine Sprache \\( L \\) dienen, deren Worte aus beliebig vielen
 genau einem "b" bestehen soll, also:
 
 \\[
-\begin{equation}
-L = \\{ab, aab, aaab, \dots\\}.\nonumber
-\end{equation}
+L = \\{ab, aab, aaab, \dots\\}.
 \\]
 
 Eine solche Sprache lässt sich mit folgender Grammatik beschreiben:
 
 \\[
-\begin{equation}
-\begin{array}{l}
-G = (N, T, P, S)\\\\
+\begin{align}
+&G = (N, T, P, S)\\\\
 \\\\
-N = \\{A, X\\}\\\\
-T = \\{a, b, \varepsilon\\}\\\\
-P = \\{X \rightarrow aAb, A \rightarrow a\vert\varepsilon\\}\\\\
-S = X\nonumber
-\end{array}
-\end{equation}
+&N = \\{A, X\\}\\\\
+&T = \\{a, b, \varepsilon\\}\\\\
+&P = \\{X \rightarrow aAb, A \rightarrow a\vert\varepsilon\\}\\\\
+&S = X
+\end{align}
 \\]
 
 Eingabeworte könnten jedoch auch folgende sein:

@@ -3,35 +3,27 @@
 Betrachten wir also nun eine Grammatik, die Dezimalzahlen beschreibt:
 
 \\[
-\begin{array}{l}
-\begin{equation}
-G = (N, T, P, S)\\\\
+\begin{align}
+&G = (N, T, P, S)\\\\
 \\\\
-N = \\{0, 1, 2, \dots, 9, ','\\}\\\\
-T = \\{\varepsilon\\}\\\\
-P = \\{X \rightarrow (A,A)\vert\varepsilon, A \rightarrow 0\vert1\vert2\vert\dots\vert9\vert\varepsilon\\}\\\\
-S = X\nonumber
-\end{equation}
-\end{array}
+&N = \\{0, 1, 2, \dots, 9, ','\\}\\\\
+&T = \\{\varepsilon\\}\\\\
+&P = \\{X \rightarrow (A,A)\vert\varepsilon, A \rightarrow 0\vert1\vert2\vert\dots\vert9\vert\varepsilon\\}\\\\
+&S = X\nonumber
+\end{align}
 \\]
 
 Das Eingabealphabet eines möglichen Automaten, der nach dieser Grammatik \\( G \\) modelliert ist, besäße ein
 Eingabealphabet, das den Nichtterminalsymbolen \\( N \\) der Grammatik \\( G \\) entspräche, also:
 
 \\[
-\begin{equation}
-\Sigma = N = \\{0, 1, 2, \dots, 9, ','\\}\nonumber
-\end{equation}
+\Sigma = N = \\{0, 1, 2, \dots, 9, ','\\}
 \\]
 
 Daraus lassen sich dann verschiedene Wörter für die Eingabe des Automaten formen, zum Beispiel:
 
 \\[
-\begin{equation}
-\begin{array}{l}
 E = \\{,,,,; 023;3244,23; 23,32; 234,,,,234 \\}
-\end{array}
-\end{equation}
 \\]
 
 Unsere Sprache soll allerdings *valide* Dezimalzahlen beschreiben, und mit der Grammatik
