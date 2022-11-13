@@ -40,7 +40,7 @@ prüfen:
 
 In Worten beschrieben:
 
-  1. Solange Zeichen "a" auf dem Eingabeband ist, bleibe in Zustand \\( q_{0} \\).
+  1. Solange das Zeichen "a" vom Eingabeband gelesen wird, bleibe in Zustand \\( q_{0} \\).
   2. Wird Zeichen "b" gelesen, wechsle in Zustand \\( q_{1} \\). Ist dies das letzte Eingabezeichen, so ist das Wort in der Sprache akzeptiert/enthalten.
   3. Ist es nicht das letzte Eingabezeichen, aber der Endzustand erreicht, so ist das Wort *nicht* in der Sprache enthalten.
   4. Ist es das letzte Eingabezeichen aber der Endzustand ist erreicht, so ist das Wort ebenfalls *nicht* in der Sprache enthalten.

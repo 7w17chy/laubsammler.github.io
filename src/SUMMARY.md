@@ -14,7 +14,7 @@
         - [Deterministischer endlicher Automat (DEA)](fsa/aut/dea.md)
         - [Nichtdeterministischer endlicher Automat (NEA)](fsa/aut/nea.md)
         - [Umwandlung DEA in NEA](fsa/aut/umwandlung.md)
-        - [Pushdown Automat](fsa/aut/pda.md)
+        - [Deterministischer Kellerautomat (DKA/PDA)](fsa/aut/dka.md)
         - [Nichtdeterministischer Kellerautomat (NKA)](fsa/aut/nka.md)
         - [Turingmaschine](fsa/aut/tm.md)
 - [Programmiersprachen](ps/README.md)

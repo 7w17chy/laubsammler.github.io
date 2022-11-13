@@ -10,18 +10,17 @@ dass:
 - \\( e_{rein} = \varepsilon \\) (prinzipiell: das oberste Kellerelement wird "gelöscht")
 
 ## Formaler Aufbau
-Ein NKA wird durch das 7-Tupel \\( K = (Q, \Sigma, \Gamma, \delta, q_{0}, \\#, E) \\)
+Ein NKA wird durch das 6-Tupel \\( K = (Q, \Sigma, \Gamma, \delta, q_{0}, \\#) \\)
 beschrieben:
 
 | Element | Bedeutung |
 | :-: | :-: |
-| \\( Q \\) | Zustandsmenge |
+| \\( Z \\) | Zustandsmenge |
 | \\( \Sigma \\) | Eingabealphabet |
 | \\( \Gamma \\) | Kelleralphabet |
-| \\( \delta \\) | Uebergangsfunktion(en) |
-| \\( q_{0} \in Q \\) | Startzustand |
+| \\( \delta \\) | Übergangsfunktion |
+| \\( q_{0} \in Z \\) | Startzustand |
 | \\( \\# \in \Gamma \\) | Anfangssymbol im Keller |
-| \\( E \subseteq Q \\) | Menge von Endzustaenden |
 
 ## Die Übergangsfunktion
 Die Übergangsfunktion \\( \delta \\) (derer es mehrere geben kann, \\( \delta_{0}, \delta_{1},
@@ -33,7 +32,7 @@ Die Übergangsfunktion \\( \delta \\) (derer es mehrere geben kann, \\( \delta_{
 \end{equation}
 \\]
 
-\\( \delta \\) ist mit dem momentanen Zustand \\( q_{n} \\)  ( \\( q_{n} \in Q \\)), dem Symbol dass sich im
+\\( \delta \\) ist mit dem momentanen Zustand \\( q_{n} \\)  ( \\( q_{n} \in Z \\)), dem Symbol dass sich im
 Keller am obersten befindet \\( \Gamma \\) und dem momentanen
 Zeichen unter dem Lesekopf, also dem aktuell betrachteten Zeichen auf dem Eingabeband (das
 auch \\( \varepsilon \\), also leer sein kann), parametrisiert.
@@ -51,9 +50,9 @@ Zur Erinnerung: \\( \\# \\) ist das Anfangssymbol im Keller. Wird also ein Zeich
 genommen und es entpuppt sich als \\( \\# \\), so ist dies als "der Keller ist leer"-Signal zu
 interpretieren.
 
-## Huch, wo sind die Endzustaende?
-Das "nichtdeterministisch" in NKA signalisiert es schon: Es gibt keine Endzustände.  Der
-Automat endet, wenn das Eingabeband abgearbeitet ist, d. h. das Wort darauf vollständig
-gelesen ist. Ist der Keller ebenfalls leer, so ist das Wort in der durch die Grammatik/den
-Automaten angegebenen Sprache enthalten und der Automat endet erfolgreich, andernfalls
-nicht.
+## Huch, wo sind die Endzustände?[^wikipedia]
+Bei NKAs ist es möglich, auf die Definition der Endzustände zu verzichen; stattdessen definiert man,
+dass der Automat das Eingabewort akzeptiert, wenn nach der Abarbeitung des Eingabewortes auf dem Eingabeband
+der Keller leer ist.
+
+[^wikipedia]: Artikel zum Thema Kellerautomaten auf [Deutsch](https://de.wikipedia.org/wiki/Kellerautomat) und [Englisch](https://en.wikipedia.org/wiki/Pushdown_automaton)
