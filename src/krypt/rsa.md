@@ -35,12 +35,29 @@ auch entsprechend verwendet/berechnet:
 - \\( (d, n) \\): privater Schlüssel, zum Entschlüsseln
 
 ## Die Idee
+Zweifaches Potenzieren soll die Lösung sein: Zum Verschlüsseln mit \\(e \\), zum Entschlüsseln mit \\( d \\):
 \\[
 \begin{align}
 (x^{e})^{d} &= x \mod n\\\\
+x^{e * d} &= x \mod n \\\\
 \end{align}
 \\]
 
+## Die Umsetzung und Berechnen eines Schlüsselpaares
+Die oben geg. Idee erfordert ein "Aufteilen" des Satzes von Euler in zwei Einzelschritte, wobei
+\\( K \\) als Proportionalitätsfaktor dient:
+\\[
+\begin{align}
+x^{\varphi(n) + 1} &= x \mod n \\\\
+x^{K * \varphi(n) + 1} &= x \mod n
+\end{align}
+\\]
+Um unsere Schlüssel zu erhalten, müssen wir also die Potenz \\( K \cdot \varphi(n) + 1 \\) Faktorisieren:
+\\[
+e \cdot d = K \cdot \varphi(n) + 1
+\\]
+E kann frei gewählt werden, wobei gelten sollte, dass e eine Primzahl ist und \\( ggT(e, \varphi(n)) = 1 \\) und \\( e \ne d \\). \\( d \\) ergibt sich nun aus der Vorraussetzung \\( ggT(e, \varphi(n)) = 1 \\), lässt
+sich also mit Hilfe des `erweiterten Euklid'schen Algorithmus` berechnen.
 
 ## Zusammenfassung
 Folgendes Video von Christian Spannagel gibt einen guten Überblick über die Ausführung,
