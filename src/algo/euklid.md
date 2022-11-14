@@ -2,7 +2,7 @@
 
 Der Euklidische Algorithmus dient der Berechnung des größten gemeinsamen Teilers zweier Zahlen
 \\( a, b\\) (`ggT(a, b)`).
-Die Berechnung erfolgt wie folgt, am Beispiel \\( ggT(3, 15) \\):
+Die Berechnung erfolgt wie folgt, am Beispiel \\( ggT(66, 156) \\):
 
 | n | a | b | q | r |
 | :-: |:-: | :-: | :-: | :-: |
