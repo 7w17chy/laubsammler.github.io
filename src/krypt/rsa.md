@@ -57,7 +57,7 @@ Um unsere Schlüssel zu erhalten, müssen wir also die Potenz \\( K \cdot \varph
 e \cdot d = K \cdot \varphi(n) + 1
 \\]
 E kann frei gewählt werden, wobei gelten sollte, dass e eine Primzahl ist und \\( ggT(e, \varphi(n)) = 1 \\) und \\( e \ne d \\). \\( d \\) ergibt sich nun aus der Vorraussetzung \\( ggT(e, \varphi(n)) = 1 \\), lässt
-sich also mit Hilfe des `erweiterten Euklid'schen Algorithmus` berechnen.
+sich also mit Hilfe des [erweiterten Euklidischen Algorithmus](../../algo/euklid.md#Erweiterter-Euklidischer-Algorithmus) berechnen.
 
 ## RSA-Cookbook[^schluesselkonstruktion]
 1. Wähle zwei Primzahlen \\( p, q \\).
@@ -75,8 +75,8 @@ e \cdot d &\equiv 1 \mod \varphi(n) \\\\
 \Leftrightarrow e \cdot d + K \cdot \varphi(n) &= 1
 \end{align}
 \\]
-Die Lösung kann mit dem `erweiterten Euklid'schen Algorithmus` erzielt werden.
-7. Der private Schlüssel lautet: \\( (d, n) )\\.
+Die Lösung kann mit dem [erweiterten Euklidischen Algorithmus](../../algo/euklid.md#Erweiterter-Euklidischer-Algorithmus) berechnet werden.
+7. Der private Schlüssel lautet: \\( (d, n) \\).
 8. Verschlüsseln mit:
 \\[
 x^{e} = x' \mod n
