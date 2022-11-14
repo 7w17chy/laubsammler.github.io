@@ -704,9 +704,10 @@ sich also mit Hilfe des <a href="krypt/../../algo/euklid.html#Erweiterter-Euklid
 <li>\( d \) ist die Lösung folgender Gleichung:
 \[
 \begin{align}
-e \cdot d &amp;\equiv 1 \mod \varphi(n) \\
-\Leftrightarrow \dots \\
-\Leftrightarrow e \cdot d + K \cdot \varphi(n) &amp;= 1
+e \cdot d &amp;= 1 \mod \varphi(n) \\
+\Leftrightarrow e \cdot d - K \cdot \varphi(n) &amp;= 1 \\
+in eEuklid: e \cdot x + \varphi(n) \cdot y &amp;= 1 \\
+\Leftrightarrow d = x
 \end{align}
 \]
 Die Lösung kann mit dem <a href="krypt/../../algo/euklid.html#Erweiterter-Euklidischer-Algorithmus">erweiterten Euklidischen Algorithmus</a> berechnet werden.</li>
