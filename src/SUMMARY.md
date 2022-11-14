@@ -32,7 +32,7 @@
         - [Insertionsort]()
         - [Mergesort]()
         - [Quicksort]()
-    - [Euklid'scher Algorithmus]()
+    - [Euklid'scher Algorithmus](algo/euklid.md)
 - [Wie funktioniert ein Computer?]()
     - [Binär- und Hexadezimalsystem]()
     - [Ganzzahlen im Binärsystem]()

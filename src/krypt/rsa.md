@@ -59,8 +59,45 @@ e \cdot d = K \cdot \varphi(n) + 1
 E kann frei gewählt werden, wobei gelten sollte, dass e eine Primzahl ist und \\( ggT(e, \varphi(n)) = 1 \\) und \\( e \ne d \\). \\( d \\) ergibt sich nun aus der Vorraussetzung \\( ggT(e, \varphi(n)) = 1 \\), lässt
 sich also mit Hilfe des `erweiterten Euklid'schen Algorithmus` berechnen.
 
+## RSA-Cookbook[^schluesselkonstruktion]
+1. Wähle zwei Primzahlen \\( p, q \\).
+2. Bilde das RSA-Modul \\( n \\) mit \\( n = p \cdot q \\).
+3. Bestimme \\( \varphi(n) \\) mit \\( \varphi(n) = (p - 1) \cdot (q - 1) \\).
+4. Wähle \\( e \\) unter Berücksichtigung folgender Bedingungen:
+    - \\( 1 < e < \varphi(n) \\)
+    - \\( ggT(e, \varphi(n)) = 1 \\)
+5. Der öffentliche Schlüssel ist: \\( (e, n) \\).
+6. \\( d \\) ist die Lösung folgender Gleichung:
+\\[
+\begin{align}
+e \cdot d &\equiv 1 \mod \varphi(n) \\\\
+\Leftrightarrow \dots \\\\
+\Leftrightarrow e \cdot d + K \cdot \varphi(n) &= 1
+\end{align}
+\\]
+Die Lösung kann mit dem `erweiterten Euklid'schen Algorithmus` erzielt werden.
+7. Der private Schlüssel lautet: \\( (d, n) )\\.
+8. Verschlüsseln mit:
+\\[
+x^{e} = x' \mod n
+\\]
+9. Entschlüsseln mit:
+\\[
+x'^{d} = x \mod n
+\\]
+
+## Laufzeitkomplexität
+
+## Warum ist das jetzt sicher?
+- \\( p, q, e \\) werden möglichst groß gewählt, sodass ein Knacken aufgrund der Natur der Primfaktorzerlegung
+nur in nicht-annehmbarer Zeit vollzogen werden könnte
+- Es werden nicht etwa einzelne Buchstaben oder Sätze verschlüsselt, sondern ganze Texte als
+eine große Zahl interpretiert, die dann verschlüsselt werden
+
 ## Zusammenfassung
 Folgendes Video von Christian Spannagel gibt einen guten Überblick über die Ausführung,
 also Konstruktion eines Schlüsselpaares:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XR6zeI_rNPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[^schluesselkonstruktion]: [Video](https://www.youtube.com/watch?v=oXlY-yx1oIw) von Christian Spannagel, das die Konstruktion der RSA-Schlüssel demonstriert und auch weitere Infos über RSA liefert
